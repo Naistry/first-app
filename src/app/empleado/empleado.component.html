@@ -1,2 +1,18 @@
 
-<p>Empleado</p>
+<p>Nombre del empleado: {{nombre}}</p>
+
+<p>Apellido del empleado: {{apellido}}</p>
+
+
+<p>Empresa del empleado: {{empresa}} </p>
+
+
+<!--<p>Intreduce la empresa: <input type="text" #empresa (keyup)="0" ></p>-->
+<p>Intreduce la empresa: <input type="text" [(ngModel)]="empresa"> </p>
+
+<br/>
+<p>{{text}}</p>
+Registrado: <input type="radio" value="si" name="nregistro" id="registro" [checked]="loginCheckProperty" (click)="setUsario($event)">
+No registrado:  <input type="radio" name="nregistro" value="no" (click)="setUsario($event)">
+
+<!--{{getRegistroUsario()}}-->
